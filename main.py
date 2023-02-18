@@ -15,7 +15,7 @@ def get_weather(city, open_weather_token):
         humidity = data["main"]["humidity"]
         wind_speed = data["wind"]["speed"]
 
-        print(f"The weather in {city_name}\nTemperature: {temperature}\nHumidity: {humidity}\nWind Speed: {wind_speed}")
+        print(f"The weather in {city_name}\nTemperature: {temperature}\nHumidity: {humidity}\nWind Speed: {wind_speed} m/s")
 
     except Exception as ex:
         print(ex)
